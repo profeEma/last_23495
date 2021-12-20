@@ -1,0 +1,26 @@
+.nav{
+	display: flex;
+	flex-direction: row;
+	@media only screen and (max-width: 768px){
+		justify-content: center;
+	}
+	@media only screen and (min-width: 1023px){
+		justify-content: flex-end;
+	}
+	li{
+		list-style-type: none;
+		a{
+			text-decoration: none;
+			color:blue;
+			@media only screen and (max-width: 768px){
+				padding:10px;
+			}
+			@media only screen and (min-width: 1023px){
+				padding: 20px;
+			}
+			&:hover{
+				color:violet;
+			}
+		}
+	}
+}

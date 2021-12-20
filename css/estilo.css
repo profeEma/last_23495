@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.logoFuente, h1, h2 {
+  font-family: 'Poppins', sans-serif; }
+  @media only screen and (max-width: 768px) {
+    .logoFuente, h1, h2 {
+      font-size: 40px; } }
+  @media only screen and (min-width: 1023px) {
+    .logoFuente, h1, h2 {
+      font-size: 50px; } }
+
+.textoFuente, h3 {
+  font-family: 'Nunito', sans-serif; }
+
+.grid-contenedor {
+  display: grid; }
+  @media only screen and (max-width: 768px) {
+    .grid-contenedor {
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 100%;
+      grid-template-areas: "logo" "nav" "titulo" "contenido" "footer"; } }
+  @media only screen and (min-width: 1023px) {
+    .grid-contenedor {
+      grid-teamplate-rows: auto auto auto auto;
+      grid-template-columns: 30% 70%;
+      grid-template-areas: "logo nav" "titulo titulo" "contenido contenido" "footer footer"; } }
+
+.item-hijo-logo {
+  grid-area: logo; }
+
+.item-hijo-nav {
+  grid-area: nav; }
+
+.item-hijo-titulo {
+  grid-area: titulo; }
+
+.item-hijo-contenido {
+  grid-area: contenido; }
+
+.item-hijo-footer {
+  grid-area: footer; }
+
+.item-hijo-contenido, .item-hijo-footer {
+  display: flex; }
+  @media only screen and (max-width: 768px) {
+    .item-hijo-contenido, .item-hijo-footer {
+      flex-direction: column; } }
+  @media only screen and (min-width: 1023px) {
+    .item-hijo-contenido, .item-hijo-footer {
+      flex-direction: row; } }
+
+.nav {
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (max-width: 768px) {
+    .nav {
+      justify-content: center; } }
+  @media only screen and (min-width: 1023px) {
+    .nav {
+      justify-content: flex-end; } }
+  .nav li {
+    list-style-type: none; }
+    .nav li a {
+      text-decoration: none;
+      color: blue; }
+      @media only screen and (max-width: 768px) {
+        .nav li a {
+          padding: 10px; } }
+      @media only screen and (min-width: 1023px) {
+        .nav li a {
+          padding: 20px; } }
+      .nav li a:hover {
+        color: violet; }
+
+@media only screen and (min-width: 1023px) {
+  .item-hijo-footer {
+    justify-content: space-around; } }
+
+@media only screen and (max-width: 768px) {
+  .item-hijo-footer {
+    justify-content: center; } }
+
+.imagen-fluida {
+  width: 100%; }
